@@ -12,6 +12,7 @@ This repository contains examples, configurations, and documentation for using M
 - Integration examples
 - Documentation and guides
 - Sample applications
+- Troubleshooting resources
 
 ## Getting Started
 
@@ -22,14 +23,40 @@ To get started with Windsurf MCP:
 3. Explore the examples provided
 4. Implement MCP in your own projects
 
+### Configuration Example
+
+```json
+{
+  "mcpServers": {
+    "github": {
+      "command": "npx",
+      "args": [
+        "-y",
+        "@modelcontextprotocol/server-github"
+      ],
+      "env": {
+        "GITHUB_PERSONAL_ACCESS_TOKEN": "your_github_token_here"
+      }
+    }
+  }
+}
+```
+
 ## MCP Servers
 
 This repository includes examples for various MCP servers including:
 
-- GitHub
-- Linear
-- Firecrawl
+- GitHub - For repository management and code operations
+- Linear - For project and issue tracking
+- Firecrawl - For web scraping and data extraction
 - And more...
+
+## Use Cases
+
+- Automate repository management tasks
+- Create and manage project issues
+- Extract and analyze web data
+- Enhance AI assistant capabilities with external tools
 
 ## Contributing
 
